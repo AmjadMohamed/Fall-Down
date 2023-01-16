@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     //public
     [SerializeField] float speed;
+    //public bool IsInteracting = false;
 
 
 
@@ -25,10 +26,10 @@ public class PlayerController : MonoBehaviour
     }
 
     // this method gets the move input from the OnMove Action
-    private void OnMove(InputValue val)
+    public void OnMove(InputValue val)
     {
         moveInputVal = val.Get<Vector2>();
-        print(moveInputVal.x);
+        //print(moveInputVal.x);
     }
 
     private void Movement()

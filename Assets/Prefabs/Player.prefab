@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8018847722660124055}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -108,7 +108,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &8018847722660124048
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -159,7 +159,81 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: b9d072db-d8ef-4ed5-bd5d-24dc02ac6232
+    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow,/Twin
+      USB Gamepad      /stick,/Twin USB Gamepad      1/stick]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2fc0995b-acbd-4ed4-8f00-0334bb6ac800
+    m_ActionName: Player/Look[/Mouse/delta]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b44a46ee-1010-410f-b1f5-b56b5b91b2d8
+    m_ActionName: Player/Fire[/Mouse/leftButton,/Twin USB Gamepad      /trigger,/Twin
+      USB Gamepad      1/trigger]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 83eed7aa-8ebd-4c44-9b13-f23d911d6de3
+    m_ActionName: Player/Move Ladder[/Twin USB Gamepad      /button4,/Twin USB Gamepad     
+      1/button4,/Keyboard/x]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f1687622-040c-4342-8c1f-f09c9189faaa
+    m_ActionName: UI/Navigate[/Twin USB Gamepad      /stick/up,/Twin USB Gamepad     
+      1/stick/up,/Twin USB Gamepad      /stick/down,/Twin USB Gamepad      1/stick/down,/Twin
+      USB Gamepad      /stick/left,/Twin USB Gamepad      1/stick/left,/Twin USB
+      Gamepad      /stick/right,/Twin USB Gamepad      1/stick/right,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2dd6ec49-9784-4229-994f-14d5e1eab02f
+    m_ActionName: UI/Submit[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c8fc90a4-fad4-4d13-b123-01ac5c5560d0
+    m_ActionName: UI/Cancel[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ca162754-d6ea-4ab5-a597-6b3b5a2806f2
+    m_ActionName: UI/Point[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8eab6803-b2ce-4dcb-a725-c54fcae43f86
+    m_ActionName: UI/Click[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 408846f3-41d3-42d8-953f-97912a3d0670
+    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 787a0e3a-001b-4d4f-b565-d36fbd655c92
+    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 873011ff-a912-4df7-a5f0-13df9d09d1e2
+    m_ActionName: UI/RightClick[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d8b15bfe-6b66-4d7a-bc0d-7918af97f62a
+    m_ActionName: UI/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6ad252fb-4ca0-4c94-840b-d2ca62347b5c
+    m_ActionName: UI/TrackedDeviceOrientation
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Player
@@ -177,4 +251,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b957b933bd5d70148a74bc654abde90c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
+  speed: 600
