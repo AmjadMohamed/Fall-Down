@@ -2,20 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//[System.Serializable]
-//public class FallingObject : MonoBehaviour
-//{
-//    [SerializeField] GameObject prefab;
-//    [SerializeField] int poolCapacity;
 
-//    public int Amount { get { return poolCapacity; } }
-//    public GameObject Prefab { get { return prefab; } }
-
-//}
 public class FallingObjectsPool : MonoBehaviour
 {
     public static FallingObjectsPool instance;
-    //[SerializeField] List<FallingObject> fallingObjects;
     [SerializeField] List<GameObject> fallingObjects;
     [SerializeField] List<GameObject> pooledfallingObjects;
     
@@ -79,12 +69,6 @@ public class FallingObjectsPool : MonoBehaviour
     {
         fallObj.SetActive(false);
         fallObj.transform.parent = transform;
-
-        //fallObj.transform.position = initialPosition;
     }
-    //public List<GameObject> GetPooledItems()
-    //{
-    //    return pooledfallingObjects;
-    //}
     
 }
