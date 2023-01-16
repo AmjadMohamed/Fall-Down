@@ -27,7 +27,7 @@ public class Ladder : MonoBehaviour
                 RealParent = this.transform.parent.gameObject;
                 if (NewParent != null)
                 {
-                    this.transform.parent = NewParent.transform;
+                    this.transform.SetParent(NewParent.transform);
                     //NewParent.GetComponent<PlayerController>().IsInteracting = true;
                 }
             }
@@ -36,9 +36,8 @@ public class Ladder : MonoBehaviour
                 print("should climb");
                 if (NewParent != null)
                 {
-                    print(NewParent.name);
-                    NewParent.transform.parent = this.gameObject.transform;
-                    NewParent.transform.position = Vector2.zero;
+                    NewParent.transform.position = this.transform.position;
+                    NewParent.transform.SetParent(this.gameObject.transform);
                 }
             }
         }
@@ -47,7 +46,7 @@ public class Ladder : MonoBehaviour
             print("should leave");
             if (RealParent != null)
             {
-                this.transform.parent = RealParent.transform;
+                this.transform.SetParent(RealParent.transform);
             }
         }
     }
@@ -67,7 +66,7 @@ public class Ladder : MonoBehaviour
         IsColliding = false;
         if (NewParent != null)
         {
-            NewParent.transform.parent = null;
+            NewParent.transform.SetParent(null);
             // NewParent.GetComponent<PlayerController>().IsInteracting = false;
         }
         NewParent = null;
