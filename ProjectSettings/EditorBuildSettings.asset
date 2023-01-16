@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    path: Assets/Scenes/Serag Scene(Main_Menu).unity
+    guid: bab66324c7928c442bea367d53abc7b4
+  - enabled: 1
+=======
+>>>>>>> 3e1411f1a2d4b103c3f8db7f93a12586015eb74b
+>>>>>>> Stashed changes
     path: Assets/Scenes/Game Scene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
