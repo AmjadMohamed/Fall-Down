@@ -46,7 +46,6 @@ public class FallingObjectsPool : MonoBehaviour
         {
             int randomSpawner = Random.Range(0, fallingObjects.Count);
             GameObject fallObj = Instantiate(fallingObjects[randomSpawner]);
-            
             fallObj.SetActive(false);
             pooledfallingObjects.Add(fallObj);
             fallObj.transform.parent = transform;

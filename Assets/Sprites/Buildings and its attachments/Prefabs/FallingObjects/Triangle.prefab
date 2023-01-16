@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 1250653693005452191}
   - component: {fileID: 4115459893538754496}
   - component: {fileID: 4114613755621029374}
-  - component: {fileID: 5373349378227748567}
   - component: {fileID: 6806629771756956350}
+  - component: {fileID: -7994454753768859634}
+  - component: {fileID: -5135994581425267276}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -115,7 +116,31 @@ PolygonCollider2D:
     - - {x: 0, y: 0.5773587}
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
---- !u!50 &5373349378227748567
+--- !u!114 &6806629771756956350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5239018153476892523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae78d584c56f2c94fa2b6f012b5d69da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7994454753768859634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5239018153476892523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6606c4573dc6074a9042d34db09e95a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &-5135994581425267276
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -136,15 +161,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6806629771756956350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5239018153476892523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae78d584c56f2c94fa2b6f012b5d69da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
