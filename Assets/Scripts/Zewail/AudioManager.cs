@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static AudioManager instance;
+
+    [SerializeField] AudioSource mainMenu, effects, win;
+    private void Awake()
     {
-        
+        if(instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayButtonSounds(AudioClip clip)
     {
-        
+        mainMenu.PlayOneShot(clip);
+    }
+    public void PlayEffectsSounds(AudioClip clip)
+    {
+        effects.PlayOneShot(clip);
+    }
+    public void ChangeMasterVolume(float volume)
+    {
+        AudioListener.volume = volume;
     }
 }

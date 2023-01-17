@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIspasued = false;
     public GameObject PauseMenuUI;
+    [SerializeField] AudioClip BtnClip;
 
     private void Awake()
     {
@@ -55,5 +56,9 @@ public class PauseMenu : MonoBehaviour
     {
         //Debug.Log("Quit");
         Application.Quit();
+    }
+    public void PlayButtonClickSound()
+    {
+        AudioManager.instance.PlayButtonSounds(BtnClip);
     }
 }
