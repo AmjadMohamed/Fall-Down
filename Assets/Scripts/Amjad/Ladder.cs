@@ -50,7 +50,14 @@ public class Ladder : MonoBehaviour
             {
                 this.transform.SetParent(RealParent.transform);
             }
+            if (NewParent != null)
+            {
+                NewParent.transform.SetParent(null);
+                NewParent.GetComponent<PlayerController>().IsClimbing = false;
+            }
+
         }
+
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
