@@ -9,9 +9,11 @@ public class Ladder : MonoBehaviour
     private GameObject NewParent;
     private GameObject RealParent;
     private Vector3 OriginalPos;
+    private SpriteRenderer MyRenderer;
 
     private void Awake()
     {
+        MyRenderer = GetComponent<SpriteRenderer>();
         OriginalPos = this.transform.position;
         if (this.transform.parent != null)
         {
@@ -32,6 +34,7 @@ public class Ladder : MonoBehaviour
                 {
                     transform.position = new Vector2(NewParent.transform.position.x, this.transform.position.y);
                     this.transform.SetParent(NewParent.transform);
+                    //transform.position = Vector2.zero;
                     //NewParent.GetComponent<PlayerController>().IsInteracting = true;
                 }
             }
@@ -64,16 +67,17 @@ public class Ladder : MonoBehaviour
         if (this.transform.position.y < -5)
         {
             this.transform.position = OriginalPos;
-            if(RealParent != null)
+            if (RealParent != null)
             {
                 this.transform.SetParent(RealParent.transform);
             }
         }
 
     }
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision) // fe mo4kla bt7sl hena lamma msln agy a5od el selm and ykon fe player tany by collide m3ah, sa3at by5ly el player el tany how aelly ymsk el ladder
     {
         print("col enter");
+        MyRenderer.color = Color.yellow;
         if (collision.CompareTag("Player"))
         {
             IsColliding = true;
@@ -87,6 +91,7 @@ public class Ladder : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         print("col exit");
+        MyRenderer.color = Color.white;
         IsColliding = false;
         if (NewParent != null)
         {

@@ -75,9 +75,43 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.transform.CompareTag("Ground"))
         {
-            OriginalPos = new Vector2(collision.transform.position.x, collision.transform.position.y+1);
+            OriginalPos = new Vector2(collision.transform.position.x, collision.transform.position.y + 1);
         }
     }
+
+    //private void OnTriggerStay2D(Collider2D collision) // fe mo4kla bt7sl hena lamma msln agy a5od el selm and ykon fe player tany by collide m3ah, sa3at by5ly el player el tany how aelly ymsk el ladder
+    //{
+    //    print("col enter");
+    //    if (collision.CompareTag("Ladder"))
+    //    {
+    //        Ladder ladder = collision.GetComponent<Ladder>();
+    //        if (ladder != null)
+    //        {
+    //            ladder.IsColliding = true;
+    //            if (ladder.NewParent == null)
+    //            {
+    //                ladder.NewParent = this.gameObject;
+    //            }
+    //        }
+    //    }
+    //}
+
+    //private void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    print("col exit");
+    //    Ladder ladder = collision.GetComponent<Ladder>();
+    //    if (ladder != null)
+    //    {
+    //        ladder.IsColliding = false;
+    //        if (ladder.NewParent != null)
+    //        {
+    //            this.GetComponent<PlayerController>().IsClimbing = false;
+    //            this.transform.SetParent(null);
+    //            ladder.NewParent = null;
+    //            // NewParent.GetComponent<PlayerController>().IsInteracting = false;
+    //        }
+    //    }
+    //}
 
 
 
