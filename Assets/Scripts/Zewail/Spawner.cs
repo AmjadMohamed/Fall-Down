@@ -4,22 +4,19 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    
-    [SerializeField] int spawnAmount;
-    int spawnTracker = 1;
-    
+
+    //[SerializeField] int spawnAmount;
+    //int spawnTracker = 0;
+    [SerializeField] levelSpawnAmount level = levelSpawnAmount.level_1;
     
     private void FixedUpdate()
     {
-        //if(spawnTracker <= spawnAmount)
-        //{
-        //    Spawn();
-        //}
-        Spawn();
+        Spawn(level);
     }
-    void Spawn()
+    void Spawn(levelSpawnAmount Level)
     {
-        GameObject fallObj = FallingObjectsPool.instance.Get();
+        GameObject fallObj = FallingObjectsPool.instance.Get(Level);
+
         //fallingSpeed = Random.Range(2.5f, 12.0f);
         if (fallObj != null)
         {
@@ -30,6 +27,6 @@ public class Spawner : MonoBehaviour
             //Debug.Log(fallObj.name + " Speed:" + fallingSpeed + "y-position: "+fallObj.transform.position.y);
         }
         
-        spawnTracker++;
+        //spawnTracker++;
     }
 }

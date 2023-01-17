@@ -2,16 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+public enum levelSpawnAmount
+{
+    level_1 = 5, level_2 = 10, level_3 = 20
+}
 public class FallingObjectsPool : MonoBehaviour
 {
+    
     public static FallingObjectsPool instance;
     [SerializeField] List<GameObject> fallingObjects;
     [SerializeField] List<GameObject> pooledfallingObjects;
     
     
     [SerializeField] int poolCapacity;
+    bool isMaxSpawn = false;
     public int PoolCount { get { return poolCapacity; } }
+    public bool IsMaxSpawn { get { return isMaxSpawn; } set { isMaxSpawn = value; } }
 
     private void Awake()
     {
@@ -52,11 +58,11 @@ public class FallingObjectsPool : MonoBehaviour
         }
     }
 
-    public GameObject Get()
+    public GameObject Get(levelSpawnAmount level)
     {
-        for (int i = 0; i < pooledfallingObjects.Count; i++)
+        for (int i = 0; i < (int)level; i++)
         {
-            if (!pooledfallingObjects[i].activeInHierarchy)
+            if (!pooledfallingObjects[i].activeInHierarchy/* && !isMaxSpawn*/)
             {
                 return pooledfallingObjects[i];
             }
