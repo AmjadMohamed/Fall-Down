@@ -8,20 +8,23 @@ public class Ladder : MonoBehaviour
     private bool IsColliding = false;
     private GameObject NewParent;
     private GameObject RealParent;
+    private Vector3 OriginalPos;
 
     private void Awake()
     {
+        OriginalPos = this.transform.position;
         if (this.transform.parent != null)
         {
             RealParent = this.transform.parent.gameObject;
         }
+
     }
 
     private void Update()
     {
         if (IsColliding)
         {
-            if (Input.GetKeyDown(KeyCode.N) || Input.GetKeyDown(KeyCode.JoystickButton2)) // ps3 square
+            if (Input.GetKeyDown(KeyCode.N) || Input.GetKeyDown(KeyCode.JoystickButton2) && !transform.parent.CompareTag("Player")) // ps3 square
             {
                 print("should move");
                 RealParent = this.transform.parent.gameObject;
@@ -58,6 +61,15 @@ public class Ladder : MonoBehaviour
 
         }
 
+        if (this.transform.position.y < -5)
+        {
+            this.transform.position = OriginalPos;
+            if(RealParent != null)
+            {
+                this.transform.SetParent(RealParent.transform);
+            }
+        }
+
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -76,9 +88,9 @@ public class Ladder : MonoBehaviour
     {
         print("col exit");
         IsColliding = false;
-        NewParent.GetComponent<PlayerController>().IsClimbing = false;
         if (NewParent != null)
         {
+            NewParent.GetComponent<PlayerController>().IsClimbing = false;
             NewParent.transform.SetParent(null);
             NewParent = null;
             // NewParent.GetComponent<PlayerController>().IsInteracting = false;

@@ -60,7 +60,7 @@ public class FallingObjectsPool : MonoBehaviour
 
     public GameObject Get(levelSpawnAmount level)
     {
-        for (int i = 0; i < (int)level; i++)
+        for (int i = 0; i < poolCapacity/*(int)level*/; i++)
         {
             if (!pooledfallingObjects[i].activeInHierarchy/* && !isMaxSpawn*/)
             {

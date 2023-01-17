@@ -16,15 +16,22 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb2d;
     Vector2 moveInputVal;
     float VerticalMov;
+    private Vector3 OriginalPos;
 
     void Awake()
     {
+        OriginalPos = transform.position;
         rb2d = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
         VerticalMov = Input.GetAxis("Vertical");
+
+        if (this.transform.position.y < -6)
+        {
+            this.transform.position = OriginalPos;
+        }
         //print("vertical: " + VerticalMov);
     }
 
@@ -62,6 +69,14 @@ public class PlayerController : MonoBehaviour
     private void LeaveLadder()
     {
         rb2d.gravityScale = 4;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.CompareTag("Ground"))
+        {
+            OriginalPos = new Vector2(collision.transform.position.x, collision.transform.position.y+1);
+        }
     }
 
 
