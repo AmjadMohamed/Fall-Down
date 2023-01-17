@@ -27,11 +27,12 @@ public class Ladder : MonoBehaviour
                 RealParent = this.transform.parent.gameObject;
                 if (NewParent != null)
                 {
+                    transform.position = new Vector2(NewParent.transform.position.x, this.transform.position.y);
                     this.transform.SetParent(NewParent.transform);
                     //NewParent.GetComponent<PlayerController>().IsInteracting = true;
                 }
             }
-            else if (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.JoystickButton0)) // ps3 x
+            if (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.JoystickButton0)) // ps3 x
             {
                 print("should climb");
                 if (NewParent != null)
