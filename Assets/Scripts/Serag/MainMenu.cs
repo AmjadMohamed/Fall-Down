@@ -18,7 +18,7 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Game started");
         //SceneManager.LoadScene(1);
         //AudioManager.instance.PlayButtonSounds(BtnClip);
-        SceneManager.LoadScene("Zewail Scene",LoadSceneMode.Single);
+        SceneManager.LoadScene(1,LoadSceneMode.Single);
     }
 
     public void  QuitGame()
