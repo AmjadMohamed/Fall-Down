@@ -21,7 +21,7 @@ public class Spawner : MonoBehaviour
         if (fallObj != null)
         {
             fallObj.transform.parent = transform;
-            fallObj.transform.position = new Vector2(Random.Range(-7f, 7f), 7f);
+            fallObj.transform.position = new Vector2(Random.Range(-10f, 10f), 7f);
             fallObj.SetActive(true);
             //fallObj.transform.Translate(0, fallingSpeed * Time.deltaTime, 0);
             //Debug.Log(fallObj.name + " Speed:" + fallingSpeed + "y-position: "+fallObj.transform.position.y);
