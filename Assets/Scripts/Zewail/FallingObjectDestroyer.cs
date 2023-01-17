@@ -6,8 +6,6 @@ using UnityEngine.Events;
 public class FallingObjectDestroyer : MonoBehaviour
 {
 
-    [SerializeField] UnityEvent onPlayerCollision;
-
     private void Update()
     {
         if (this.transform.position.y < -5)
@@ -21,14 +19,12 @@ public class FallingObjectDestroyer : MonoBehaviour
         if (collision.collider.CompareTag("Ground"))
         {
 
-            GameManager.Singelton.PlayerHit();
-
             FallingObjectsPool.instance.ReturnToPool(this.gameObject);
         }
         else if (collision.collider.CompareTag("Player"))
         {
-            FallingObjectsPool.instance.ReturnToPool(this.gameObject);
-            onPlayerCollision.Invoke();
+
+            GameManager.Singelton.PlayerHit();
 
         }
     }

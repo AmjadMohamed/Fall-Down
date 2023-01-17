@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Serag Scene(Main_Menu).unity
-    guid: bab66324c7928c442bea367d53abc7b4
-  - enabled: 0
-    path: Assets/Scenes/Game Scene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: dbb670e89f7faa6429bc0bdf32baae9b
+  - enabled: 1
+    path: Assets/Scenes/Zewail Scene.unity
+    guid: c1efa891f8232e040a11c308870afdb8
+  - enabled: 1
+    path: Assets/Scenes/Pause Menu.unity
+    guid: 25df95ccdd344f44d83610d0c06cecf3
   m_configObjects: {}

@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField] int spawnAmount = 5;
     
-    [SerializeField] levelSpawnAmount level = levelSpawnAmount.level_1;
+    
 
     private void FixedUpdate()
     {

@@ -3,14 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PasueMenu : MonoBehaviour
+public class PauseMenu : MonoBehaviour
 {
     public static bool GameIspasued = false;
     public GameObject PauseMenuUI;
+
+    private void Awake()
+    {
+        //GameManager.Singelton.onGameResume += Resume;
+        //GameManager.Singelton.onGameEnd += QuitGame;
+        PauseMenuUI.SetActive(false);
+    }
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
+            //Debug.Log("Escape is pressed");
             if (GameIspasued)
             {
                 Resume();
@@ -30,6 +38,7 @@ public class PasueMenu : MonoBehaviour
     }
     void Pause()
     {
+        //Debug.Log("Pause menu");
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIspasued = true;
@@ -37,13 +46,14 @@ public class PasueMenu : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        Debug.Log("Main Menu");
+        //Debug.Log("Main Menu");
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //transaction between scenes 
+        SceneManager.LoadScene("Main Menu"); //transaction between scenes 
+        //GameManager.Singelton.StartGame();
     }
     public void QuitGame()
     {
-        Debug.Log("Quit");
+        //Debug.Log("Quit");
         Application.Quit();
     }
 }
