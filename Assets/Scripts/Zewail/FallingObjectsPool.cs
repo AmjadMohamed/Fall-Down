@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
+=======
 
 public enum levelSpawnAmount
 {
     level_1 = 1, level_2 = 10, level_3 = 20, endLevel = 0
 }
+>>>>>>> 65bf3abf3a61e6227cb5be0604594ffa0b6aae11
 public class FallingObjectsPool : MonoBehaviour
 {
     
@@ -58,9 +61,17 @@ public class FallingObjectsPool : MonoBehaviour
         }
     }
 
-    public GameObject Get(levelSpawnAmount level)
+    public GameObject Get(int spawnAmount)
     {
+<<<<<<< Updated upstream
         for (int i = 0; i < poolCapacity/*(int)level*/; i++)
+=======
+<<<<<<< HEAD
+        for (int i = 0; i < spawnAmount; i++)
+=======
+        for (int i = 0; i < poolCapacity/*(int)level*/; i++)
+>>>>>>> 65bf3abf3a61e6227cb5be0604594ffa0b6aae11
+>>>>>>> Stashed changes
         {
             if (!pooledfallingObjects[i].activeInHierarchy/* && !isMaxSpawn*/)
             {

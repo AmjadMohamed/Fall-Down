@@ -8,7 +8,7 @@ public class PlayerLevelDecrease : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameManager.Singelton.onPlayerCollided += DelayPlayer;
     }
 
     // Update is called once per frame
@@ -16,8 +16,9 @@ public class PlayerLevelDecrease : MonoBehaviour
     {
         
     }
-    public void DelayPlayer()
+    void DelayPlayer()
     {
+        
         //this.gameObject.transform.position = new Vector2(0, -5f);
         Debug.Log("Player is hit");
     }
