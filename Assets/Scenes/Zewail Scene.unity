@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallingSpeed: 5
-  spawnAmount: 20
+  spawnAmount: 10
 --- !u!1 &115054383
 GameObject:
   m_ObjectHideFlags: 0

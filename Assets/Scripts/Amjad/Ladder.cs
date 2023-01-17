@@ -27,7 +27,7 @@ public class Ladder : MonoBehaviour
                 RealParent = this.transform.parent.gameObject;
                 if (NewParent != null)
                 {
-                    this.transform.parent = NewParent.transform;
+                    this.transform.SetParent(NewParent.transform);
                     //NewParent.GetComponent<PlayerController>().IsInteracting = true;
                 }
             }
@@ -36,9 +36,9 @@ public class Ladder : MonoBehaviour
                 print("should climb");
                 if (NewParent != null)
                 {
-                    print(NewParent.name);
-                    NewParent.transform.parent = this.gameObject.transform;
-                    NewParent.transform.position = Vector2.zero;
+                    NewParent.GetComponent<PlayerController>().IsClimbing = true;
+                    NewParent.transform.position = new Vector3(this.transform.position.x, NewParent.transform.position.y, NewParent.transform.position.z);
+                    NewParent.transform.SetParent(this.gameObject.transform);
                 }
             }
         }
@@ -47,7 +47,7 @@ public class Ladder : MonoBehaviour
             print("should leave");
             if (RealParent != null)
             {
-                this.transform.parent = RealParent.transform;
+                this.transform.SetParent(RealParent.transform);
             }
         }
     }
@@ -57,7 +57,10 @@ public class Ladder : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             IsColliding = true;
-            NewParent = collision.gameObject;
+            if (NewParent == null)
+            {
+                NewParent = collision.gameObject;
+            }
         }
     }
 
@@ -65,11 +68,12 @@ public class Ladder : MonoBehaviour
     {
         print("col exit");
         IsColliding = false;
+        NewParent.GetComponent<PlayerController>().IsClimbing = false;
         if (NewParent != null)
         {
-            NewParent.transform.parent = null;
+            NewParent.transform.SetParent(null);
+            NewParent = null;
             // NewParent.GetComponent<PlayerController>().IsInteracting = false;
         }
-        NewParent = null;
     }
 }
