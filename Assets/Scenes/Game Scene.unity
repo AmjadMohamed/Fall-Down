@@ -147,13 +147,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92016533}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.57, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 5.57, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 130268671}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &92016535
 MonoBehaviour:
@@ -248,9 +248,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 92016534}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &160725948
 GameObject:
@@ -282,10 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallingObjects:
-  - {fileID: 6428386635462778769, guid: 5e39f12805b62394b9fe9544bdd7328b, type: 3}
-  - {fileID: 5386343245757531077, guid: 761220521b0b75a4e960a6772cd75a41, type: 3}
-  - {fileID: 6059134725633512194, guid: e01c27c4e54653047826a5fbaf01418f, type: 3}
-  - {fileID: 5239018153476892523, guid: 6dab3bfa8df28364c87c3aa85b88f2a6, type: 3}
+  - {fileID: 91949588215827282, guid: f85d4c40a3d0f1f4d80732819eea33b1, type: 3}
   pooledfallingObjects: []
   poolCapacity: 20
 --- !u!4 &160725950
@@ -469,6 +467,7 @@ GameObject:
   - component: {fileID: 1143787393}
   - component: {fileID: 1143787394}
   - component: {fileID: 1143787395}
+  - component: {fileID: 1143787396}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -528,7 +527,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -536,6 +535,18 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &1143787396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143787392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 918adeb0ab4d5c94ab14954e98115665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1382033606
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,7 +635,7 @@ GameObject:
   - component: {fileID: 1454551611}
   m_Layer: 3
   m_Name: Ground Collider
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -752,7 +763,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2028537874
 GameObject:
@@ -839,5 +850,5 @@ Transform:
   - {fileID: 356195990}
   - {fileID: 1143787393}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

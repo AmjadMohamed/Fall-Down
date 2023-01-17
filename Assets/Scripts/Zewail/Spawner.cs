@@ -8,7 +8,7 @@ public class Spawner : MonoBehaviour
     //[SerializeField] int spawnAmount;
     //int spawnTracker = 0;
     [SerializeField] levelSpawnAmount level = levelSpawnAmount.level_1;
-    
+
     private void FixedUpdate()
     {
         Spawn(level);
@@ -21,12 +21,12 @@ public class Spawner : MonoBehaviour
         if (fallObj != null)
         {
             fallObj.transform.parent = this.transform;
-            fallObj.transform.position = new Vector2(Random.Range(-10f, 10f), this.transform.position.y);
+            fallObj.transform.position = new Vector2(Random.Range( -5.5f, 5.5f), this.transform.position.y);
             fallObj.SetActive(true);
             //fallObj.transform.Translate(0, fallingSpeed * Time.deltaTime, 0);
             //Debug.Log(fallObj.name + " Speed:" + fallingSpeed + "y-position: "+fallObj.transform.position.y);
         }
-        
+
         //spawnTracker++;
     }
 }

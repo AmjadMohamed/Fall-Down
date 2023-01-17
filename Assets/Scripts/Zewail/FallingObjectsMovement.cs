@@ -16,7 +16,7 @@ public class FallingObjectsMovement : MonoBehaviour
     {
         rb2d= GetComponent<Rigidbody2D>();
         rb2d.gravityScale = 0.0f;
-        fallingSpeed = Random.Range(2.5f, 12.0f);
+        fallingSpeed = Random.Range(2.5f, 5f);
     }
     //void Update()
     //{

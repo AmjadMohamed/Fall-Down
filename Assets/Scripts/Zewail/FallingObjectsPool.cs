@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum levelSpawnAmount
 {
-    level_1 = 5, level_2 = 10, level_3 = 20, endLevel = 0
+    level_1 = 1, level_2 = 10, level_3 = 20, endLevel = 0
 }
 public class FallingObjectsPool : MonoBehaviour
 {
