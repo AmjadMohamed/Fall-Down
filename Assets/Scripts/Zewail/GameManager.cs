@@ -1,18 +1,44 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager 
 {
-    // Start is called before the first frame update
-    void Start()
+    public event Action onPlayerCollided;
+    private static GameManager instance;
+    public static GameManager Singelton
     {
-        
+        get
+        {
+            if (instance == null)
+            {
+                instance = new GameManager();
+            }
+            return instance;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayerHit()
     {
-        
+        onPlayerCollided();
     }
+    #region Creating a singelton while using a monobehaviour
+    //private static GameManager singelton = null;
+    //[SerializeField] int spawnAmount = 5;
+    //private void Awake()
+    //{
+    //    if(singelton == null)
+    //    {
+    //        DontDestroyOnLoad(gameObject);
+    //    }
+    //    else if(singelton != this)
+    //    {
+    //        Destroy(gameObject);
+    //    }
+    //} 
+    #endregion
+
+
 }
