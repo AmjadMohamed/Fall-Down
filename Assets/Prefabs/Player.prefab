@@ -251,4 +251,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b957b933bd5d70148a74bc654abde90c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 600
+  MovSpeed: 600
+  ClimbSpeed: 500
+  IsClimbing: 0
