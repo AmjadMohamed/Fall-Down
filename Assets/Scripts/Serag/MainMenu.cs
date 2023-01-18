@@ -20,7 +20,7 @@ public class MainMenu : MonoBehaviour
         AudioManager.instance.PlayMusic(musicNames.Gameplay);
     }
 
-    public void  QuitGame()
+    public void QuitGame()
     {
         PlayBtnSFX();
         //Debug.Log("quit");

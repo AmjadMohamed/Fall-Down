@@ -1,5 +1,5 @@
 {
-    "name": "Player Controller",
+    "name": "Player Controller Actions",
     "maps": [
         {
             "name": "Player",
@@ -36,6 +36,24 @@
                     "name": "Move Ladder",
                     "type": "Button",
                     "id": "83eed7aa-8ebd-4c44-9b13-f23d911d6de3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Leave Ladder",
+                    "type": "Button",
+                    "id": "37541603-e31c-4c36-8482-fadb42308290",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Climb Ladder",
+                    "type": "Button",
+                    "id": "4a98eea0-d1d1-40b6-b572-99f89c8d7b84",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -277,11 +295,121 @@
                 {
                     "name": "",
                     "id": "d3f33b1b-cd57-4f59-86dd-e649006e5146",
-                    "path": "<Keyboard>/x",
+                    "path": "<Keyboard>/n",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Move Ladder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "94e99225-3ae5-4dc8-a39d-1f5a20393912",
+                    "path": "<DualShockGamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move Ladder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fea0376f-9608-49af-9c42-6cdc52867923",
+                    "path": "<XInputController>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move Ladder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f6acf98a-b832-462b-a161-8e657d3098c4",
+                    "path": "<Keyboard>/m",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Leave Ladder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3691158b-de66-496b-b4d9-d5c273974eaf",
+                    "path": "<XInputController>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Leave Ladder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "86c8fa63-266c-4868-bd48-18eba8f1278f",
+                    "path": "<DualShockGamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Leave Ladder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7e915a7a-3d4e-4c42-86ae-2a4891ec5817",
+                    "path": "<HID::Twin USB Gamepad      >/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Leave Ladder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "720ab055-1fa1-446b-ba4e-e07a2a63d8d7",
+                    "path": "<Keyboard>/b",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Climb Ladder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e13098bc-cb88-47c4-adea-69aa6a4a9f58",
+                    "path": "<XInputController>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Climb Ladder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f400da8-da79-4b4f-9b26-7641923843b7",
+                    "path": "<DualShockGamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Climb Ladder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7c87ae85-b3e0-40f8-b9f3-691f3d423512",
+                    "path": "<HID::Twin USB Gamepad      >/button5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Climb Ladder",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
