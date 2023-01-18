@@ -19,6 +19,10 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        //GameManager.Singelton.onPlayerMove += PlayMovementSounds;
+        //GameManager.Singelton.onPlayerFall += PlayFallingSFX;
+        //GameManager.Singelton.onPlayerWin += PlayWinSFX;
+        
     }
 
     public void PlayButtonSounds(AudioClip clip)

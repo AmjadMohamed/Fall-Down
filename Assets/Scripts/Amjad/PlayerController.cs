@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float MovSpeed;
     [SerializeField] float ClimbSpeed;
     public bool IsClimbing = false;
-
+    [SerializeField] AudioClip movement;
+    //[SerializeField] AudioClip falling;
 
 
     // private
@@ -67,6 +68,7 @@ public class PlayerController : MonoBehaviour
         {
             if (rb2d.velocity.x != 0)
             {
+                AudioManager.instance.PlayMovementSounds(movement);
                 anim.SetBool("isMoving", true);
                 if(rb2d.velocity.x > 0)
                 {
@@ -101,6 +103,7 @@ public class PlayerController : MonoBehaviour
         {
             OriginalPos = new Vector2(collision.transform.position.x, collision.transform.position.y + 1);
         }
+        
     }
 
     //private void OnTriggerStay2D(Collider2D collision) // fe mo4kla bt7sl hena lamma msln agy a5od el selm and ykon fe player tany by collide m3ah, sa3at by5ly el player el tany how aelly ymsk el ladder

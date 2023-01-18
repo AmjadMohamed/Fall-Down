@@ -7,13 +7,12 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public event Action onPlayerCollided;
-    //public event Action onPlayerFall;
-    //public event Action onLadderFall;
-    //public event Action onGameStart;
-    //public event Action onGameEnd;
-    //public event Action onGamePaused;
-    //public event Action onGameResume;
+    //public event Action<AudioClip> onPlayerFall;
+    //public event Action<AudioClip> onPlayerMove;
+    ////public event Action onGameStart;
+    //public event Action<AudioClip> onPlayerWin;
 
+    AudioClip clip;
     //public GameState state;
 
     #region Singelton Creation
@@ -65,6 +64,18 @@ public class GameManager : MonoBehaviour
     {
         onPlayerCollided();
     }
+    //public void PlayerWon()
+    //{
+    //    onPlayerWin();
+    //}
+    //public void PlayerMoved()
+    //{
+    //    onPlayerMove(clip);
+    //}
+    //public void PlayerFell()
+    //{
+    //    onPlayerFall();
+    //}
     //public void StartGame()
     //{
     //    onGameStart();
