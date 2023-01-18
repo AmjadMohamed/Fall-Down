@@ -18,12 +18,14 @@ public class PlayerController : MonoBehaviour
     float VerticalMov;
     private Vector3 OriginalPos;
     Animator anim;
+    SpriteRenderer sr;
 
     void Awake()
     {
         OriginalPos = transform.position;
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -63,9 +65,17 @@ public class PlayerController : MonoBehaviour
 
         if (anim != null)
         {
-            if (rb2d.velocity.x > 0)
+            if (rb2d.velocity.x != 0)
             {
                 anim.SetBool("isMoving", true);
+                if(rb2d.velocity.x > 0)
+                {
+                    sr.flipX= true;
+                }
+                else
+                {
+                    sr.flipX= false;
+                }
             }
             else
             {
