@@ -4,32 +4,40 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] AudioClip BtnClip;
+    [SerializeField] AudioSource mainMenuMusic;
+    [SerializeField] AudioSource btnSFX;
     //private AudioClip playGameBtnClip;
 
-    //private void Awake()
-    //{
-    //    GameManager.Singelton.onGameStart += Playgame;
-    //    GameManager.Singelton.onGameEnd += QuitGame;
-    //}
+    private void Awake()
+    {
+        PlayMainMenuOST();
+    }
     public void Playgame()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         Debug.Log("Game started");
         //SceneManager.LoadScene(1);
-        //AudioManager.instance.PlayButtonSounds(BtnClip);
+        PlayBtnSFX();
         SceneManager.LoadScene(1,LoadSceneMode.Single);
     }
 
     public void  QuitGame()
     {
-        //AudioManager.instance.PlayButtonSounds(BtnClip);
+        PlayBtnSFX();
         //Debug.Log("quit");
         Application.Quit();
     }
-
-    public void PlayButtonClickSound()
+    public void PlayBtnSFX()
     {
-        AudioManager.instance.PlayButtonSounds(BtnClip);
+        AudioManager.instance.PlayButtonSounds(btnSFX.clip);
+    }
+
+    public void PlayMainMenuOST()
+    {
+        AudioManager.instance.PlayMainMenuMusic(mainMenuMusic.clip);
+        //if (SceneManager.GetActiveScene().buildIndex == 0) 
+        //{
+        //    AudioManager.instance.PlayButtonSounds(mainMenuMusic.clip);
+        //}
     }
 }
