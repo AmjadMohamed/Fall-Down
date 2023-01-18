@@ -277,7 +277,6 @@ MonoBehaviour:
   MovSpeed: 600
   ClimbSpeed: 500
   IsClimbing: 0
-  movement: {fileID: 8300000, guid: 75a2b0204ef572248b08ad6f82e1ac58, type: 3}
 --- !u!114 &517372092918666457
 MonoBehaviour:
   m_ObjectHideFlags: 0

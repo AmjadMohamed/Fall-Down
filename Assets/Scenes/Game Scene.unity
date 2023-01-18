@@ -556,7 +556,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130268668}
-  m_LocalRotation: {x: -1e-45, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 1e-45, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.6365585, y: 2.309084, z: -10.301616}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -672,7 +672,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190902129}
-  m_LocalRotation: {x: -3e-45, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 1e-45, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2062,17 +2062,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683807740}
   m_CullTransparentMesh: 1
---- !u!114 &738591009 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6102051498725083313, guid: 76bb40b52a53e0d47b9e7b4719dfd544, type: 3}
-  m_PrefabInstance: {fileID: 6102051498552246636}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab720ad1e96a0e748bbe90b19c9eb9be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &745590738
 GameObject:
   m_ObjectHideFlags: 0
@@ -3757,7 +3746,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506338414}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.8e-44, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5739,8 +5728,6 @@ MonoBehaviour:
   timer: {fileID: 315835973}
   TimeCounter: {fileID: 315835975}
   Results: {fileID: 240991173}
-  win: {fileID: 8300000, guid: 223687e030f0fd24a84f94d7710dbcdc, type: 3}
-  gameplaySound: {fileID: 738591009}
 --- !u!114 &2048885198 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4426087911292918459, guid: e1d26e4e56c468e40b77c79992f7ab69, type: 3}
