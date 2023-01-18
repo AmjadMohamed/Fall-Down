@@ -50,6 +50,7 @@ public class PauseMenu : MonoBehaviour
         //Debug.Log("Main Menu");
         Time.timeScale = 1f;
         SceneManager.LoadScene("Main Menu"); //transaction between scenes 
+        AudioManager.instance.PlayMusic(musicNames.MainMenu);
         //GameManager.Singelton.StartGame();
     }
     public void QuitGame()
@@ -59,6 +60,6 @@ public class PauseMenu : MonoBehaviour
     }
     public void PlayButtonClickSound()
     {
-        AudioManager.instance.PlayButtonSounds(BtnClip);
+        //AudioManager.instance.PlayButtonSounds(BtnClip);
     }
 }

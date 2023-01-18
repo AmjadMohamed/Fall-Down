@@ -267,6 +267,7 @@ MonoBehaviour:
   MovSpeed: 600
   ClimbSpeed: 500
   IsClimbing: 0
+  movementSound: {fileID: 2112853154779458207, guid: ba2696b97410013418d821ecb9d4c90a, type: 3}
 --- !u!114 &517372092918666457
 MonoBehaviour:
   m_ObjectHideFlags: 0

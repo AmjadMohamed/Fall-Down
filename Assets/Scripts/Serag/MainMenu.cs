@@ -4,21 +4,20 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] AudioSource mainMenuMusic;
-    [SerializeField] AudioSource btnSFX;
+    //[SerializeField] AudioSource mainMenuMusic;
+    //[SerializeField] AudioSource btnSFX;
     //private AudioClip playGameBtnClip;
 
-    private void Awake()
-    {
-        PlayMainMenuOST();
-    }
+    
     public void Playgame()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        Debug.Log("Game started");
+        Debug.Log("Before Game started");
         //SceneManager.LoadScene(1);
         PlayBtnSFX();
         SceneManager.LoadScene(1,LoadSceneMode.Single);
+        Debug.Log("After Game started");
+        AudioManager.instance.PlayMusic(musicNames.Gameplay);
     }
 
     public void  QuitGame()
@@ -29,15 +28,15 @@ public class MainMenu : MonoBehaviour
     }
     public void PlayBtnSFX()
     {
-        AudioManager.instance.PlayButtonSounds(btnSFX.clip);
+        AudioManager.instance.PlaySFX(sfxNames.Buttons);
     }
 
-    public void PlayMainMenuOST()
-    {
-        AudioManager.instance.PlayMainMenuMusic(mainMenuMusic.clip);
-        //if (SceneManager.GetActiveScene().buildIndex == 0) 
-        //{
-        //    AudioManager.instance.PlayButtonSounds(mainMenuMusic.clip);
-        //}
-    }
+    //public void PlayMainMenuOST()
+    //{
+    //    AudioManager.instance.PlaySFX(soundNames.Buttons);
+    //    //if (SceneManager.GetActiveScene().buildIndex == 0) 
+    //    //{
+    //    //    AudioManager.instance.PlayButtonSounds(mainMenuMusic.clip);
+    //    //}
+    //}
 }

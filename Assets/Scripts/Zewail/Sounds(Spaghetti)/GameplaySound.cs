@@ -8,7 +8,7 @@ public class GameplaySound : MonoBehaviour
     [SerializeField] AudioClip gameplay;
     private void Start()
     {
-        AudioManager.instance.PlayGamePlayMusic(gameplay);
+        //AudioManager.instance.PlayGamePlayMusic(gameplay);
     }
 
 }

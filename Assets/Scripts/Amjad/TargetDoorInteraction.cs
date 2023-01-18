@@ -29,8 +29,9 @@ public class TargetDoorInteraction : MonoBehaviour
     {
         if (ArrivedPlayers == joinedPlayersController.PlayersCount && ArrivedPlayers > 0)
         {
-            gameplaysound.gameObject.SetActive(false);
+            //gameplaysound.gameObject.SetActive(false);
             WinSound.gameObject.SetActive(true);
+            //AudioManager.instance.PlaySFX(sfxNames.Win);
             WinGamePanel.SetActive(true);
             timer.timeIsRunnig = false;
         }

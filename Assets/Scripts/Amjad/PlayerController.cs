@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float MovSpeed;
     [SerializeField] float ClimbSpeed;
     public bool IsClimbing = false;
-
+    [SerializeField] MovementSound movementSound;
 
 
     // private
@@ -68,7 +68,9 @@ public class PlayerController : MonoBehaviour
             if (rb2d.velocity.x != 0)
             {
                 anim.SetBool("isMoving", true);
-                if(rb2d.velocity.x > 0)
+                //AudioManager.instance.PlaySFX(sfxNames.PlayerMovement);
+                //movementSound.gameObject.SetActive(true);
+                if (rb2d.velocity.x > 0)
                 {
                     sr.flipX= true;
                 }

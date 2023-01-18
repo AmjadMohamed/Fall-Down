@@ -3,11 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[System.Serializable]
+public class Sounds
+{
+    int soundIndex;
+    public AudioClip clip;
+}
+public enum musicNames
+{
+    MainMenu,Gameplay
+}
+public enum sfxNames
+{
+    Buttons, PlayerMovement, PlayerFalling, Win
+}
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager instance;
+    [SerializeField] Sounds[] musicSounds, sfxSounds;
+    [SerializeField] AudioSource musicSource, sfxSource;
 
-    [SerializeField] AudioSource mainMenu, button, gameplay, win, movement, falling; 
+    public static AudioManager instance;
     private void Awake()
     {
         if(instance == null)
@@ -20,38 +35,73 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    public void PlayButtonSounds(AudioClip clip)
+    private void Start()
     {
-        button.PlayOneShot(clip);
-
+        PlayMusic(musicNames.MainMenu);
     }
-    public void PlayMainMenuMusic(AudioClip clip) 
+    public void PlayMusic(musicNames music)
     {
-        mainMenu.PlayOneShot(clip);
+        for(int i = 0; i < musicSounds.Length; i++) 
+        {
+            if (i == (int)music)
+            {
+                musicSource.clip = musicSounds[i].clip;
+                //musicSource.PlayOneShot(musicSounds[i].clip);
+                musicSource.Play();
+                //return;
+            }
+        }
     }
-    public void PlayMovementSounds(AudioClip clip)
+    public void StopMusic()
     {
-        movement.PlayOneShot(clip);
-        //effects.PlayOneShot(clip);
+        musicSource.Stop();
     }
-    public void PlayGamePlayMusic(AudioClip clip)
+    public void PlaySFX(sfxNames sfx)
     {
-        gameplay.PlayOneShot(clip);
-        //effects.PlayOneShot(clip);
-    }
-    public void PlayWinSFX(AudioClip clip)
-    {
-        win.PlayOneShot(clip);
-        //effects.PlayOneShot(clip);
-    }
-    public void PlayFallingSFX(AudioClip clip)
-    {
-        falling.PlayOneShot(clip);
-        //effects.PlayOneShot(clip);
+        for (int i = 0; i < sfxSounds.Length; i++)
+        {
+            if (i == (int)sfx)
+            {
+                
+                sfxSource.clip = sfxSounds[i].clip;
+                
+                sfxSource.PlayOneShot(sfxSounds[i].clip);
+                //return;
+            }
+        }
     }
     public void ChangeMasterVolume(float volume)
     {
         AudioListener.volume = volume;
     }
+    //public void PlayButtonSounds(AudioClip clip)
+    //{
+    //    button.PlayOneShot(clip);
+
+    //}
+    //public void PlayMainMenuMusic(AudioClip clip) 
+    //{
+    //    mainMenu.PlayOneShot(clip);
+    //}
+    //public void PlayMovementSounds(AudioClip clip)
+    //{
+    //    movement.PlayOneShot(clip);
+    //    //effects.PlayOneShot(clip);
+    //}
+    //public void PlayGamePlayMusic(AudioClip clip)
+    //{
+    //    gameplay.PlayOneShot(clip);
+    //    //effects.PlayOneShot(clip);
+    //}
+    //public void PlayWinSFX(AudioClip clip)
+    //{
+    //    win.PlayOneShot(clip);
+    //    //effects.PlayOneShot(clip);
+    //}
+    //public void PlayFallingSFX(AudioClip clip)
+    //{
+    //    falling.PlayOneShot(clip);
+    //    //effects.PlayOneShot(clip);
+    //}
+
 }

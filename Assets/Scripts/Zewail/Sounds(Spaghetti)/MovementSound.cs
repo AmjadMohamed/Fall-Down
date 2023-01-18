@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FallingSound : MonoBehaviour
+public class MovementSound : MonoBehaviour
 {
-    [SerializeField] AudioClip falling;
+    [SerializeField] AudioClip movement;
     private void Start()
     {
-        AudioManager.instance.PlayFallingSFX(falling);
+        //AudioManager.instance.PlayMovementSounds(movement);
     }
 
 }

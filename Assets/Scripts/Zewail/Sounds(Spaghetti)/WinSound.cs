@@ -8,7 +8,8 @@ public class WinSound : MonoBehaviour
     [SerializeField] AudioClip win;
     private void Start()
     {
-        AudioManager.instance.PlayWinSFX(win);
+        //AudioManager.instance.PlayWinSFX(win);
+        AudioManager.instance.PlaySFX(sfxNames.Win);
     }
 
 }
