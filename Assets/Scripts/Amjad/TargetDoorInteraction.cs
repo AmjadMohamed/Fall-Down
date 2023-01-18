@@ -21,7 +21,7 @@ public class TargetDoorInteraction : MonoBehaviour
             ArrivedPlayers++;
             collision.GetComponent<PlayerController>().enabled = false;
             collision.transform.tag = "Untagged";
-            Results.text += $"{ArrivedPlayers}- {collision.GetComponent<SpriteRenderer>().sprite.name} -> {TimeCounter.text}\n";
+            Results.text += $"{ArrivedPlayers}- {collision.GetComponent<Animator>().runtimeAnimatorController.name} -> {TimeCounter.text}\n";
         }
     }
 
