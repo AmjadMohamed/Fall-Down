@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8018847722660124049}
   - component: {fileID: 8018847722660124048}
   - component: {fileID: 8018847722660124054}
+  - component: {fileID: 8845182750906305254}
   - component: {fileID: 8018847722660124055}
   - component: {fileID: 517372092918666457}
   - component: {fileID: -6040102383376444867}
@@ -241,6 +242,26 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!95 &8845182750906305254
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8018847722660124060}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &8018847722660124055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,3 +306,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 301a3557a2c6b2c4295ea3e05dde800a, type: 3}
   - {fileID: 21300000, guid: 8cb04da57bfa1a14ebb7262690c4ba90, type: 3}
   - {fileID: 21300000, guid: 2ba4959918ce9b34dbc80c9b59732285, type: 3}
+  animations:
+  - {fileID: 9100000, guid: 8dc401cebcecef24fb1a890ed1211535, type: 2}
+  - {fileID: 9100000, guid: c809fa2e811c86c42b6163dbd39de951, type: 2}
+  - {fileID: 9100000, guid: 736e97b649ab77e43b4067d185c1a08e, type: 2}
+  - {fileID: 9100000, guid: 2fe4443018b41954bbae0ab94be2a921, type: 2}

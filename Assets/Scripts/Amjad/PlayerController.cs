@@ -17,11 +17,13 @@ public class PlayerController : MonoBehaviour
     Vector2 moveInputVal;
     float VerticalMov;
     private Vector3 OriginalPos;
+    Animator anim;
 
     void Awake()
     {
         OriginalPos = transform.position;
         rb2d = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -58,6 +60,18 @@ public class PlayerController : MonoBehaviour
     private void Movement()
     {
         rb2d.velocity = new Vector2(moveInputVal.x * MovSpeed * Time.fixedDeltaTime, rb2d.velocity.y);
+
+        if (anim != null)
+        {
+            if (rb2d.velocity.x > 0)
+            {
+                anim.SetBool("isMoving", true);
+            }
+            else
+            {
+                anim.SetBool("isMoving", false);
+            }
+        }
     }
 
     private void ClimbLadder()

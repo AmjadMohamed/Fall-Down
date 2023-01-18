@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f1e52a36a365e5d4fb44c016b2d89258
+guid: a69483f4e9a3d7042a7bcbfcfefe181b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -113,23 +113,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: blue moving lq _0
+      name: purble moving lq _0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,20 +125,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9b64178dda9993439aaa550fe20c4b7
-      internalID: 708887156
+      spriteID: d5672e3bf33ed2348b0dd59572a64df3
+      internalID: 453131609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _1
+      name: purble moving lq _1
       rect:
         serializedVersion: 2
         x: 105
@@ -158,20 +146,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b77164623f30aaa48ac7fdece619d524
-      internalID: -957516918
+      spriteID: 9f35787202e39644f916017ca4b13d82
+      internalID: -1876778100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _2
+      name: purble moving lq _2
       rect:
         serializedVersion: 2
         x: 210
@@ -179,20 +167,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4045df5fe592b04f82a56f963e58545
-      internalID: -911651333
+      spriteID: 8a41900b3f676b94bbac4543beac6c3c
+      internalID: -461187361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _3
+      name: purble moving lq _3
       rect:
         serializedVersion: 2
         x: 315
@@ -200,20 +188,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99274d0be95c3ab44ae12ea9d1b35f7a
-      internalID: 1798977890
+      spriteID: 9a36dc3ba53435645899765667ccc580
+      internalID: 1349915192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _4
+      name: purble moving lq _4
       rect:
         serializedVersion: 2
         x: 0
@@ -221,20 +209,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b251e5497e4ba34eaff8b2521a6132a
-      internalID: -839004086
+      spriteID: 19ea882823c916541b392a1eada7e277
+      internalID: -819753936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _5
+      name: purble moving lq _5
       rect:
         serializedVersion: 2
         x: 105
@@ -242,20 +230,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61720a8a0d26f7148af1e0cad74dc3cb
-      internalID: -470125253
+      spriteID: 2593110dd7c859940bb72dfbb3941fa7
+      internalID: -907970780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _6
+      name: purble moving lq _6
       rect:
         serializedVersion: 2
         x: 210
@@ -263,20 +251,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdbd2cc9fdddfcd4a9195271467e37e6
-      internalID: 192054285
+      spriteID: ced81c17fd2c924479269237b1caceff
+      internalID: -2085267829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _7
+      name: purble moving lq _7
       rect:
         serializedVersion: 2
         x: 315
@@ -284,20 +272,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db431447f6aa7b44cba945aeaaa455fe
-      internalID: -401134608
+      spriteID: a74118516651b324ba05d32fccd71502
+      internalID: -729158289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _8
+      name: purble moving lq _8
       rect:
         serializedVersion: 2
         x: 0
@@ -305,20 +293,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 681062838e0e5994181bab99f228e85c
-      internalID: -527321844
+      spriteID: 4f23148ad629fb6489101ac99b67953e
+      internalID: -437830224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _9
+      name: purble moving lq _9
       rect:
         serializedVersion: 2
         x: 105
@@ -326,20 +314,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 721e2f9dc28f57541ad3b74f4767a763
-      internalID: 2088505014
+      spriteID: adc0345889d38564499d1b5f824ae5d5
+      internalID: -700577610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _10
+      name: purble moving lq _10
       rect:
         serializedVersion: 2
         x: 210
@@ -347,20 +335,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72803a657dbc2fa4282c3fab44de97d4
-      internalID: 1802628706
+      spriteID: be30bf9bdecd49144b65731ae8c9a2cf
+      internalID: -1997634088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _11
+      name: purble moving lq _11
       rect:
         serializedVersion: 2
         x: 315
@@ -368,20 +356,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f98d3d5045c0ba47a610c9bce869211
-      internalID: -1734128642
+      spriteID: 43de24ba5f8e66444aed92912c1e1305
+      internalID: -1594012249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _12
+      name: purble moving lq _12
       rect:
         serializedVersion: 2
         x: 0
@@ -389,20 +377,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0895c0a910d20c4bad173049d8515c5
-      internalID: 2061051836
+      spriteID: 0ce5a3f0e7d749748b71204b5ec0bb72
+      internalID: -2114615965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _13
+      name: purble moving lq _13
       rect:
         serializedVersion: 2
         x: 105
@@ -410,20 +398,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a36f8ab4ced59e439bfc5728e7aa297
-      internalID: -515613645
+      spriteID: a262d772034786148a68ffb74d8b7a5d
+      internalID: 313936526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _14
+      name: purble moving lq _14
       rect:
         serializedVersion: 2
         x: 210
@@ -431,20 +419,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3d32f088acf71242b49f59f10d3775f
-      internalID: -833225547
+      spriteID: 6cfef0807761c0e4bbf350cd283a78e1
+      internalID: 573112580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _15
+      name: purble moving lq _15
       rect:
         serializedVersion: 2
         x: 315
@@ -452,14 +440,14 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35e9e9d9c25b8f84585229ad6daa55d8
-      internalID: 696428228
+      spriteID: ed08070f41528b642a29c13da1b3e0fd
+      internalID: -1601130510
       vertices: []
       indices: 
       edges: []
@@ -475,22 +463,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      blue moving lq _11: -1734128642
-      blue moving lq _1: -957516918
-      blue moving lq _9: 2088505014
-      blue moving lq _2: -911651333
-      blue moving lq _15: 696428228
-      blue moving lq _4: -839004086
-      blue moving lq _14: -833225547
-      blue moving lq _0: 708887156
-      blue moving lq _7: -401134608
-      blue moving lq _13: -515613645
-      blue moving lq _3: 1798977890
-      blue moving lq _12: 2061051836
-      blue moving lq _5: -470125253
-      blue moving lq _8: -527321844
-      blue moving lq _10: 1802628706
-      blue moving lq _6: 192054285
+      purble moving lq _2: -461187361
+      purble moving lq _12: -2114615965
+      purble moving lq _13: 313936526
+      purble moving lq _10: -1997634088
+      purble moving lq _5: -907970780
+      purble moving lq _1: -1876778100
+      purble moving lq _3: 1349915192
+      purble moving lq _4: -819753936
+      purble moving lq _11: -1594012249
+      purble moving lq _8: -437830224
+      purble moving lq _0: 453131609
+      purble moving lq _7: -729158289
+      purble moving lq _15: -1601130510
+      purble moving lq _6: -2085267829
+      purble moving lq _9: -700577610
+      purble moving lq _14: 573112580
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

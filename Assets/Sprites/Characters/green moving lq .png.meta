@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f1e52a36a365e5d4fb44c016b2d89258
+guid: b612d227127431741881eacba0c654c2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -113,23 +113,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: blue moving lq _0
+      name: green moving lq _0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,20 +125,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9b64178dda9993439aaa550fe20c4b7
-      internalID: 708887156
+      spriteID: 75d0a8f562d493844bd5492d17a46fa1
+      internalID: -188794808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _1
+      name: green moving lq _1
       rect:
         serializedVersion: 2
         x: 105
@@ -158,20 +146,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b77164623f30aaa48ac7fdece619d524
-      internalID: -957516918
+      spriteID: 0cb28da7568271149a5c3eb425acbc52
+      internalID: 1398709242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _2
+      name: green moving lq _2
       rect:
         serializedVersion: 2
         x: 210
@@ -179,20 +167,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4045df5fe592b04f82a56f963e58545
-      internalID: -911651333
+      spriteID: 72f192d07675b994b81502df0c6f34ed
+      internalID: -60946693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _3
+      name: green moving lq _3
       rect:
         serializedVersion: 2
         x: 315
@@ -200,20 +188,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99274d0be95c3ab44ae12ea9d1b35f7a
-      internalID: 1798977890
+      spriteID: c4011d7eb7a17e444bcdfa2493ffc674
+      internalID: 2067140794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _4
+      name: green moving lq _4
       rect:
         serializedVersion: 2
         x: 0
@@ -221,20 +209,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b251e5497e4ba34eaff8b2521a6132a
-      internalID: -839004086
+      spriteID: 50c31c55adcb5c041b7dc2665e40421a
+      internalID: 590859635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _5
+      name: green moving lq _5
       rect:
         serializedVersion: 2
         x: 105
@@ -242,20 +230,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61720a8a0d26f7148af1e0cad74dc3cb
-      internalID: -470125253
+      spriteID: 8eb40b83492431949ab9ee7b2c0a698f
+      internalID: -187270141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _6
+      name: green moving lq _6
       rect:
         serializedVersion: 2
         x: 210
@@ -263,20 +251,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdbd2cc9fdddfcd4a9195271467e37e6
-      internalID: 192054285
+      spriteID: 3267105efcdbbef4084cc299a5c26b02
+      internalID: -1871059950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _7
+      name: green moving lq _7
       rect:
         serializedVersion: 2
         x: 315
@@ -284,20 +272,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db431447f6aa7b44cba945aeaaa455fe
-      internalID: -401134608
+      spriteID: 79682ad5c837fe94eb131c1687b00478
+      internalID: -1768636295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _8
+      name: green moving lq _8
       rect:
         serializedVersion: 2
         x: 0
@@ -305,20 +293,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 681062838e0e5994181bab99f228e85c
-      internalID: -527321844
+      spriteID: 61f556a9031d6254584a2f844e724e7d
+      internalID: -246358573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _9
+      name: green moving lq _9
       rect:
         serializedVersion: 2
         x: 105
@@ -326,20 +314,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 721e2f9dc28f57541ad3b74f4767a763
-      internalID: 2088505014
+      spriteID: 2485bf42e60b5ad4fba61c8b76db2d58
+      internalID: -190252872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _10
+      name: green moving lq _10
       rect:
         serializedVersion: 2
         x: 210
@@ -347,20 +335,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72803a657dbc2fa4282c3fab44de97d4
-      internalID: 1802628706
+      spriteID: 3c85447d95a40be4aa0afe95416edc1e
+      internalID: 781337352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _11
+      name: green moving lq _11
       rect:
         serializedVersion: 2
         x: 315
@@ -368,20 +356,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f98d3d5045c0ba47a610c9bce869211
-      internalID: -1734128642
+      spriteID: 81da4fa71470f1f4b9a037352fc16392
+      internalID: -1550438700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _12
+      name: green moving lq _12
       rect:
         serializedVersion: 2
         x: 0
@@ -389,20 +377,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0895c0a910d20c4bad173049d8515c5
-      internalID: 2061051836
+      spriteID: 9d6f7d52e32ec944f9355a38af54d720
+      internalID: 451940122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _13
+      name: green moving lq _13
       rect:
         serializedVersion: 2
         x: 105
@@ -410,20 +398,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a36f8ab4ced59e439bfc5728e7aa297
-      internalID: -515613645
+      spriteID: 69ce1ebdea592b94f937472b1e8b137a
+      internalID: 471494210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _14
+      name: green moving lq _14
       rect:
         serializedVersion: 2
         x: 210
@@ -431,20 +419,20 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3d32f088acf71242b49f59f10d3775f
-      internalID: -833225547
+      spriteID: ce3010acff521764dae8f44ca89c5d62
+      internalID: 1384585992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue moving lq _15
+      name: green moving lq _15
       rect:
         serializedVersion: 2
         x: 315
@@ -452,14 +440,14 @@ TextureImporter:
         width: 105
         height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35e9e9d9c25b8f84585229ad6daa55d8
-      internalID: 696428228
+      spriteID: 9b2262e956f7bfb4e8d295db89757135
+      internalID: 733955630
       vertices: []
       indices: 
       edges: []
@@ -475,22 +463,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      blue moving lq _11: -1734128642
-      blue moving lq _1: -957516918
-      blue moving lq _9: 2088505014
-      blue moving lq _2: -911651333
-      blue moving lq _15: 696428228
-      blue moving lq _4: -839004086
-      blue moving lq _14: -833225547
-      blue moving lq _0: 708887156
-      blue moving lq _7: -401134608
-      blue moving lq _13: -515613645
-      blue moving lq _3: 1798977890
-      blue moving lq _12: 2061051836
-      blue moving lq _5: -470125253
-      blue moving lq _8: -527321844
-      blue moving lq _10: 1802628706
-      blue moving lq _6: 192054285
+      green moving lq _2: -60946693
+      green moving lq _3: 2067140794
+      green moving lq _9: -190252872
+      green moving lq _6: -1871059950
+      green moving lq _0: -188794808
+      green moving lq _1: 1398709242
+      green moving lq _14: 1384585992
+      green moving lq _4: 590859635
+      green moving lq _15: 733955630
+      green moving lq _12: 451940122
+      green moving lq _8: -246358573
+      green moving lq _13: 471494210
+      green moving lq _5: -187270141
+      green moving lq _11: -1550438700
+      green moving lq _7: -1768636295
+      green moving lq _10: 781337352
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
