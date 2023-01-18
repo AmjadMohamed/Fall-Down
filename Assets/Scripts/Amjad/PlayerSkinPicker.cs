@@ -1,18 +1,18 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class PlayerSkinPicker : MonoBehaviour
 {
     [SerializeField] List<Sprite> skins;
-    [SerializeField] List<AnimatorController> animations;
-    Dictionary<string, AnimatorController> player;
+    [SerializeField] List<RuntimeAnimatorController> animations;
+    Dictionary<string, RuntimeAnimatorController> player;
 
     private void OnEnable()
     {
-        player = new Dictionary<string, AnimatorController>();
+        player = new Dictionary<string, RuntimeAnimatorController>();
         print(skins.Count + " " + animations.Count);
         for (int i = 0; i < skins.Count; i++)
         {

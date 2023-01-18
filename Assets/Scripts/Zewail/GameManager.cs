@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        
+
     }
     #region Update Game State Method trial
     //public void UpdateGameState(GameState newState)

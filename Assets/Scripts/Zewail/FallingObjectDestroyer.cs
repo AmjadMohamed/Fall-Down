@@ -24,7 +24,8 @@ public class FallingObjectDestroyer : MonoBehaviour
         else if (collision.collider.CompareTag("Player"))
         {
 
-            GameManager.Singelton.PlayerHit();
+            //GameManager.Singelton.PlayerHit();
+            collision.gameObject.transform.position = new Vector2(collision.transform.position.x, collision.transform.position.y - 5f);
 
         }
     }

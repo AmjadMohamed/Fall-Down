@@ -24,7 +24,7 @@ public class Ladder : MonoBehaviour
 
     private void Update()
     {
-        print(IsColliding);
+       // print(IsColliding);
         if (IsColliding)
         {
             if (Input.GetKeyDown(KeyCode.N) || Input.GetKeyDown(KeyCode.JoystickButton2) && !transform.parent.CompareTag("Player")) // ps3 square

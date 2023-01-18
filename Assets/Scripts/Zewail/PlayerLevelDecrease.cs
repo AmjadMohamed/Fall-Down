@@ -18,8 +18,7 @@ public class PlayerLevelDecrease : MonoBehaviour
     }
     void DelayPlayer()
     {
-        
-        //this.gameObject.transform.position = new Vector2(0, -5f);
+        //this.gameObject.transform.position = new Vector2(this.transform.position.x, this.transform.position.y - 5f);
         Debug.Log("Player is hit");
     }
 }
