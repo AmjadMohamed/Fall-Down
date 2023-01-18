@@ -6,9 +6,10 @@ using UnityEngine.Animations;
 
 public class PlayerSkinPicker : MonoBehaviour
 {
+    // this script is used to choose a random skin color for the player and assigns its correct animator controller to the character
     [SerializeField] List<Sprite> skins;
     [SerializeField] List<RuntimeAnimatorController> animations;
-    Dictionary<string, RuntimeAnimatorController> player;
+    Dictionary<string, RuntimeAnimatorController> player; // this dict is used to maintain the correct animator to the sprite
 
     private void OnEnable()
     {

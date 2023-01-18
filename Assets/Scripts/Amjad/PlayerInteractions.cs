@@ -38,7 +38,7 @@ public class PlayerInteractions : MonoBehaviour
     {
         if (context.performed && IsCollidingWithALadder)
         {
-            print("should move");
+            //print("should move");
             if (Ladder != null)
             {
                 Ladder.transform.position = new Vector2(this.transform.position.x, Ladder.transform.position.y);
@@ -51,7 +51,7 @@ public class PlayerInteractions : MonoBehaviour
     {
         if (context.performed)
         {
-            print("should leave");
+            //print("should leave");
 
             if (this.transform.parent != null) // leave climbing the ladder
             {
@@ -73,7 +73,7 @@ public class PlayerInteractions : MonoBehaviour
     {
         if (context.performed && IsCollidingWithALadder)
         {
-            print("should climb");
+            //print("should climb");
             if (Ladder != null)
             {
                 playerController.IsClimbing = true;

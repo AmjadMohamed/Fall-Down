@@ -7,6 +7,7 @@ public class GettingObjectsInTargetGroup : MonoBehaviour
 {
     private static GettingObjectsInTargetGroup instance;
 
+    // this script gets all the joined players in the scene inside the target group to keep camera track of them all
     // private
     GameObject[] players;
     CinemachineTargetGroup CTG;

@@ -10,8 +10,7 @@ public class TargetDoorInteraction : MonoBehaviour
     [SerializeField] Timer timer;
     [SerializeField] TextMeshProUGUI TimeCounter;
     [SerializeField] TextMeshProUGUI Results;
-    [SerializeField] WinSound WinSound;
-    [SerializeField] GameplaySound gameplaysound;
+    //[SerializeField] AudioClip WinSound;
     private int ArrivedPlayers;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -27,11 +26,8 @@ public class TargetDoorInteraction : MonoBehaviour
 
     private void Update()
     {
-        if (ArrivedPlayers == joinedPlayersController.PlayersCount && ArrivedPlayers > 0)
+        if (ArrivedPlayers == joinedPlayersController.PlayersCount && ArrivedPlayers > 0) // the end game condition
         {
-            //gameplaysound.gameObject.SetActive(false);
-            WinSound.gameObject.SetActive(true);
-            //AudioManager.instance.PlaySFX(sfxNames.Win);
             WinGamePanel.SetActive(true);
             timer.timeIsRunnig = false;
         }

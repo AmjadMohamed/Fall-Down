@@ -7,11 +7,9 @@ public class Ladder : MonoBehaviour
 {
     GameObject myParent;
     private Vector3 OriginalPos;
-    private SpriteRenderer MyRenderer;
 
     private void Awake()
     {
-        MyRenderer = GetComponent<SpriteRenderer>();
         OriginalPos = this.transform.position;
         if (this.transform.parent != null)
         {

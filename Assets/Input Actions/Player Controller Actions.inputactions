@@ -361,7 +361,7 @@
                 {
                     "name": "",
                     "id": "7e915a7a-3d4e-4c42-86ae-2a4891ec5817",
-                    "path": "<HID::Twin USB Gamepad      >/button3",
+                    "path": "<HID::Twin USB Gamepad      >/button2",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -405,7 +405,7 @@
                 {
                     "name": "",
                     "id": "7c87ae85-b3e0-40f8-b9f3-691f3d423512",
-                    "path": "<HID::Twin USB Gamepad      >/button5",
+                    "path": "<HID::Twin USB Gamepad      >/button3",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

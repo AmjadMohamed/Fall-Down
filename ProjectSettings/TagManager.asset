@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Ladder
+  - Audio Manager
   layers:
   - Default
   - TransparentFX

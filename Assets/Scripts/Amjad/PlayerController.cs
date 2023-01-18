@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (this.transform.position.y < -6)
+        if (this.transform.position.y < -6) // reset position when I fall outside game bounds
         {
             this.transform.position = OriginalPos;
         }
@@ -49,12 +49,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void OnMove(InputAction.CallbackContext context)
+    public void OnMove(InputAction.CallbackContext context) // getting input from the move action
     {
         moveInputVal = context.ReadValue<Vector2>();
     }
 
-    private void Movement()
+    private void Movement() // move control
     {
         rb2d.velocity = new Vector2(moveInputVal.x * MovSpeed * Time.fixedDeltaTime, rb2d.velocity.y);
 
@@ -79,18 +79,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void ClimbLadder()
+    private void ClimbLadder() // climbing the ladder 
     {
         rb2d.gravityScale = 0;
         rb2d.velocity = new Vector2(0, moveInputVal.y * ClimbSpeed * Time.fixedDeltaTime);
     }
 
-    private void LeaveLadder()
+    private void LeaveLadder() // restoring gravity scale after leaving the ladder
     {
         rb2d.gravityScale = 4;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision) // getting latest ground player stood on 
     {
         if (collision.transform.CompareTag("Ground"))
         {
