@@ -8,16 +8,18 @@ public class Timer : MonoBehaviour
     public float timeRemaining = 0;
     public bool timeIsRunnig = true;
     public TMP_Text timeText;
+    public GameObject PressAnyButtonTextGO;
 
     private void Start()
     {
-        timeIsRunnig = true;
+        timeIsRunnig = false;
     }
 
     private void Update()
     {
         if(timeIsRunnig)
         {
+            PressAnyButtonTextGO.SetActive(false);
             if(timeRemaining >=0)
             {
                 timeRemaining += Time.deltaTime;

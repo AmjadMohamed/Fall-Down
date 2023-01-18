@@ -5,10 +5,14 @@ using UnityEngine.InputSystem;
 
 public class JoinedPlayersController : MonoBehaviour
 {
+    [SerializeField] Timer timer;
+    [HideInInspector] public int PlayersCount;
     private void OnPlayerJoined(PlayerInput playerInput)
     {
         SetPlayerPosition(playerInput.transform);
         GettingObjectsInTargetGroup.Instance.AddPlayerToTheTargetGroup(playerInput.transform);
+        timer.timeIsRunnig = true;
+        PlayersCount++;
     }
 
     void SetPlayerPosition(Transform player)
